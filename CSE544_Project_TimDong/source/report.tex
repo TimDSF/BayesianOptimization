@@ -453,4 +453,14 @@ Iterations & $\geq500$ & $\sim165$ & $\sim360$ \\
 As we would have imagined, for the discrete domain (LDA and SVM in this case) with less elements, after certain iterations, the random search would do as good as the Bayesian optimization and there would be no statistical significance that Bayesian optimization would be still better. However, for the six-hump function, since the domain is continuous (grid of $1000\times1000$ for maximizing EI), the randomized algorithm is having a hard time finding the optimal locations. \\
 However, this can also guide when to terminate the optimization. In particular, for a discrete domain, we can explicitly calculate the required number of iterations using the $PAC$ model and use it as a hard upper bound to terminate the optimization procedure. However, we would still hope that there are other termination conditions and such hard upper bound would never be met.
 
+\newpage
+
+\section{Code}
+The code and all related files are uploaded to the Github at \url{https://github.com/TimDSF/BayesianOptimization/tree/main/CSE544_Project_TimDong/source}.
+
+\section{References}
+\nocite{*}
+\bibliography{References}
+\bibliographystyle{IEEEtranN}
+
 \end{document}
